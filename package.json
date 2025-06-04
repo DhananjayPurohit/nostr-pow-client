@@ -1,5 +1,6 @@
 {
   "name": "nostr-pow-client",
+  "homepage": "https://DhananjayPurohit.github.io/nostr-pow-client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
