@@ -1,12 +1,30 @@
-# React + Vite
+# Nostr PoW Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web client that displays Nostr notes ranked by Proof-of-Work (PoW). The client subscribes to Nostr relays and calculates the PoW for each note, displaying the top 10 notes with the highest PoW.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Subscribes to Nostr relays for text notes (kind 1)
+- Calculates Proof-of-Work for each note by counting leading zero bits in the note ID
+- Ranks and displays the top 10 notes by PoW
+- Shows note content, author public key, and PoW score
+- Auto-updates as new notes are received
 
-## Expanding the ESLint configuration
+## Implementation Details
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Built with React + Vite
+- Uses the Nostr protocol for decentralized content distribution
+- Implements real-time subscription and PoW calculation
+- Responsive design with clean UI
+
+## Live Demo
+
+The application is deployed at: https://DhananjayPurohit.github.io/nostr-pow-client/
+
+## Development
+
+To run locally:
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start dev server: `npm run dev`
